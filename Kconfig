@@ -1,0 +1,34 @@
+menu "libcrc configuration"
+    config BSP_USING_LIBCRC
+        bool "Enable libcrc"
+        default n
+    config BSP_LIBCRC_CRC8
+        bool "Enable CRC8"
+        depends on BSP_USING_LIBCRC
+        default n
+    config BSP_LIBCRC_CRC16
+        bool "Enable CRC16"
+        depends on BSP_USING_LIBCRC
+        default n
+     config BSP_LIBCRC_CRC32
+        bool "Enable CRC32"
+        depends on BSP_USING_LIBCRC
+        default n
+    config BSP_LIBCRC_CRC64
+        bool "Enable CRC64"
+        depends on BSP_USING_LIBCRC
+        default n
+    config BSP_LIBCRC_CRC_CITT
+        bool "Enable CRC_CITT"
+        depends on BSP_USING_LIBCRC
+        default n
+    config BSP_LIBCRC_CRC_DNP
+        bool "Enable CRC_DNP"
+        depends on BSP_USING_LIBCRC
+        default n
+    config BSP_LIBCRC_CRC_KRMIT
+        bool "Enable CRC_KRMIT"
+        depends on BSP_USING_LIBCRC
+        default n
+endmenu
+
